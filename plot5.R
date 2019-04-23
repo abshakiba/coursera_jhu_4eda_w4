@@ -16,6 +16,7 @@ trend <- as.data.frame(trend)
 names(trend) = c("Emissions")
   
 ggplot(trend,aes(row.names(trend), trend$Emissions))+
-  geom_bar(stat = "identity")
+  geom_bar(stat = "identity")+
+  labs(x="Years", y="Total PM 2.5")
 
 dev.off()
