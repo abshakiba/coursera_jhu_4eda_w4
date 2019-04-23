@@ -38,6 +38,3 @@ ggplot(trend,aes(row.names(trend), trend$Emissions))+
   labs(x="Years", y="Total PM 2.5")
 
 dev.off()
-
-
-dev.off()
