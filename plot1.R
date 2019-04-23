@@ -5,7 +5,7 @@ scc <- readRDS("Source_Classification_Code.rds")
 
 png('plot1.png')
 
-trend <- with(nei, tapply(Emissions, year, mean, na.rm=T))
+trend <- with(nei, tapply(Emissions, year, sum, na.rm=T))
 
 
 barplot(trend,
